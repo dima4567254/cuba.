@@ -1,0 +1,56 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1;
+    color: $black1;
+    font-family: $Lato;
+    font-weight: 400;
+    letter-spacing: 0.78px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/*
+.title {
+    @extend %title;
+}*/
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.link {
+    transition: color 0.5s;
+
+    &:focus {
+        color: $green;
+    }
+
+    &:hover {
+        color: $ac;
+    }
+
+    &:active {
+        color: $active;
+    }
+}
